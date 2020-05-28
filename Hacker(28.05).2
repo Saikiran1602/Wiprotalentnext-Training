@@ -1,0 +1,13 @@
+def pthFactor(n, p):
+    array=[1]
+    for i in range(2,n+1):
+        if(n%i==0):
+            array.append(i)
+    array.sort()
+    if(p<=len(array)):
+        print(array[p-1])
+    else:
+        print("0")       
+n=int(input());
+p=int(input());
+pthFactor(n,p)
