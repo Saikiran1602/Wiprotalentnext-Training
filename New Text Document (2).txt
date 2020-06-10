@@ -1,0 +1,13 @@
+public static List<Integer> isPower(List<Integer> arr) {
+    List<Integer> ans= new ArrayList<>();   
+    for(int i=0;i<arr.size();i++){
+        for(int j=0;j<arr.get(i);j++){
+            if(Math.pow(2, j)==i){
+                ans.add(1);
+                break;
+            }
+         }
+    }
+    return ans;
+
+    }

@@ -1,0 +1,16 @@
+public static int maxTrailing(List<Integer> arr) {
+    int large=-1;    
+    for(int i=0;i<arr.size();i++){
+        for(int j=0;j<i;j++){
+            int num=arr.get(i) - arr.get(j);
+            if(num>=large){
+                large=num;
+            }
+
+        }
+    }
+    
+    return large;
+    }
+
+}

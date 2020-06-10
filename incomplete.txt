@@ -1,0 +1,17 @@
+public static List<List<Integer>> groupSort(List<Integer> arr) {
+        int count=0;
+        ArrayList<ArrayList<Integer>> list=new ArrayList<ArrayList<Integer>>();
+        ArrayList<Integer> list1=new ArrayList<Integer>();
+        for(int i:arr){
+            for(int j:arr){
+                if(arr.get(i)==arr.get(j)){
+                    count=count+1;
+                }
+                list1.add(i);
+                list1.add(1, count);
+                list.add(list1);
+            }
+
+        }
+        return list;
+    }
